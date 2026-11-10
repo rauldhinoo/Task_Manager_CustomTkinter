@@ -1,4 +1,4 @@
-# My Task Manager — CustomTkinter
+# Task Manager — CustomTkinter
 
 A simple desktop Task Manager project.
 
