@@ -4,13 +4,13 @@ from pathlib import Path
 from datetime import datetime
 
 # -------------------- Configuration --------------------
-ctk.set_appearance_mode("System")
+ctk.set_appearance_mode("Dark")
 ctk.set_default_color_theme("blue")
 
 DATA_FILE = Path(__file__).with_name("tasks.json")
 
 
-class TodoApp(ctk.CTk):
+class TaskManagerApp(ctk.CTk):
     def __init__(self):
         super().__init__()
 
@@ -53,12 +53,12 @@ class TodoApp(ctk.CTk):
         header.grid_columnconfigure(0, weight=1)
 
         ctk.CTkLabel(
-            header, text="My Task Manager",
+            header, text="Task Manager",
             font=ctk.CTkFont(size=26, weight="bold")
         ).grid(row=0, column=0, padx=18, pady=(14, 2), sticky="w")
 
         ctk.CTkLabel(
-            header, text="A simple productivity dashboard",
+            header, text="A simple productivity task manager built with CustomTkinter.",
             text_color=("gray40", "gray70")
         ).grid(row=1, column=0, padx=18, pady=(0, 14), sticky="w")
 
@@ -79,7 +79,7 @@ class TodoApp(ctk.CTk):
         ).grid(row=0, column=0, columnspan=2, padx=15, pady=(13, 8), sticky="w")
 
         self.task_entry = ctk.CTkEntry(
-            panel, placeholder_text="Example: Practice Python for 30 minutes"
+            panel, placeholder_text="Example: Learn Python for 30 minutes"
         )
         self.task_entry.grid(row=1, column=0, padx=(15, 8), pady=(0, 15), sticky="ew")
         self.task_entry.bind("<Return>", lambda event: self.add_task())
@@ -231,5 +231,5 @@ class TodoApp(ctk.CTk):
 
 
 if __name__ == "__main__":
-    app = TodoApp()
+    app = TaskManagerApp()
     app.mainloop()
