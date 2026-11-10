@@ -1,5 +1,9 @@
 # Task Manager — CustomTkinter
 
+![Task Manager GUI](./assets/docs/Task-Manager-GUI.png)
+![Task Manager GUI - Adding a task](./assets/docs/Task-Manager-GUI_adding-a-task.png)
+![Task Manager GUI - Completing a task](./assets/docs/Task-Manager-GUI_completing-a-task.png)
+
 A simple desktop Task Manager project.
 
 ## 1. Install
