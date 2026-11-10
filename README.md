@@ -1,6 +1,6 @@
 # My Task Manager — CustomTkinter
 
-A simple desktop To-Do List project.
+A simple desktop Task Manager project.
 
 ## 1. Install
 
@@ -29,16 +29,6 @@ python main.py
 - Live task statistics
 - Activity log
 - Save and load tasks using `tasks.json`
-- Dark/light appearance follows the system setting
-
-## What to study in this project
-
-1. `class TodoApp(ctk.CTk)`: creating an application window with a class.
-2. `CTkFrame`, `CTkLabel`, `CTkEntry`, `CTkButton`: building the interface.
-3. `command=self.add_task`: connecting a button to a function.
-4. `self.tasks`: storing task data in a list of dictionaries.
-5. `refresh_tasks()`: updating the visible task list.
-6. `json.load()` and `json.dump()`: saving and loading data.
-7. `log()`: displaying activity messages.
+- Dark appearance
 
 The application creates `tasks.json` next to `main.py` after the first task is saved.
